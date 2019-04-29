@@ -1,0 +1,20 @@
+//- .wrapper
+    // Run JS using this minues button.
+//-     - const upCats = cats.toUpperCase();
+//-     p.hello Hello! My name is #{name}
+//-     span#yo And my cats names are #{upCats}
+//-     img.dog(src="dog.jpg" alt=`Dog ${cats}`)
+
+//- h2 
+//-     | Hello 
+//-     em How are you ?
+
+
+
+//- h2 Test
+//- This is for extend this layout and use as default or even replace
+extends layout
+//- You can replace a layout if you write in the block word
+block content
+    h2 Sales ends in #{h.moment().endOf('day').fromNow()}
+    //- The H here is use in order to take out the helpers functions passed in the REQUEST LOCALS obj.

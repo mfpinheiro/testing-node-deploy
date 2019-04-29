@@ -1,0 +1,13 @@
+extends layout
+
+include mixins/_storeCard
+include mixins/_pagination
+
+block content
+    .inner
+        //- This title is passed by the pug formmater
+        h2 #{title}
+        .stores
+            each store in stores
+                +storeCard(store)
+        +pagination(page, pages, count)

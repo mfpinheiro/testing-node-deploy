@@ -1,0 +1,10 @@
+extends layout
+
+include mixins/_storeForm
+
+block content
+    .inner
+        //- This title is passed by the pug formmater
+        h2 #{title}
+        //- You can pass values here to use in the form
+        +storeForm(store)
